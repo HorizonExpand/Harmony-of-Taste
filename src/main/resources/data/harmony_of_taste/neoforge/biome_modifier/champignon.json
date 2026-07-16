@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "taiga",
+    "birch_forest"
+  ],
+  "features": "harmony_of_taste:champignon",
+  "step": "vegetal_decoration"
+}

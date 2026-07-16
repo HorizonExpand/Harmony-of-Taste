@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "harmony_of_taste:block/champignon"
+  },
+  "render_type": "cutout"
+}

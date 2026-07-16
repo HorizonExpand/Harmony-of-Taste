@@ -2,6 +2,7 @@ package net.hrumer.harmony_of_taste;
 
 import net.hrumer.harmony_of_taste.init.HarmonyOfTasteBlocks;
 import net.hrumer.harmony_of_taste.init.HarmonyOfTasteCreativeTabs;
+import net.hrumer.harmony_of_taste.init.HarmonyOfTasteFeatures;
 import net.hrumer.harmony_of_taste.init.HarmonyOfTasteItems;
 
 import net.neoforged.bus.api.IEventBus;
@@ -13,9 +14,10 @@ public class HarmonyOfTaste {
     public static final String MODID = "harmony_of_taste";
 
     public HarmonyOfTaste(IEventBus modEventBus) {
-        HarmonyOfTasteBlocks.BLOCKS.register(modEventBus);
-        HarmonyOfTasteItems.ITEMS.register(modEventBus);
-        HarmonyOfTasteCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        HarmonyOfTasteBlocks.registry(modEventBus);
+        HarmonyOfTasteItems.registry(modEventBus);
+        HarmonyOfTasteCreativeTabs.registry(modEventBus);
+        HarmonyOfTasteFeatures.register(modEventBus);
     }
 
 }

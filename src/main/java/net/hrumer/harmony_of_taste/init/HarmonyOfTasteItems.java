@@ -4,6 +4,7 @@ import net.hrumer.harmony_of_taste.HarmonyOfTaste;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -14,4 +15,8 @@ public class HarmonyOfTasteItems {
     public static final DeferredItem<BlockItem> CHAMPIGNON_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("champignon_block", HarmonyOfTasteBlocks.CHAMPIGNON_BLOCK);
     public static final DeferredItem<BlockItem> CHAMPIGNON_STEM_ITEM = ITEMS.registerSimpleBlockItem("champignon_stem", HarmonyOfTasteBlocks.CHAMPIGNON_STEM);
     //public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder().alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+
+    public static void registry (IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }

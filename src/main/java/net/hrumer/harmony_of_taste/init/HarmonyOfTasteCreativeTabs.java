@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -25,4 +26,8 @@ public class HarmonyOfTasteCreativeTabs {
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_STEM_ITEM);
             })
             .build());
+
+    public static void registry(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
 }

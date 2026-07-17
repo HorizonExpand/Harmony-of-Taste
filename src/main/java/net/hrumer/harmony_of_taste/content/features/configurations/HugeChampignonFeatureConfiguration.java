@@ -18,22 +18,27 @@ public class HugeChampignonFeatureConfiguration implements FeatureConfiguration 
                     BlockStateProvider.CODEC.fieldOf("stem_provider")
                             .forGetter(config -> config.stemProvider),
 
-                    Codec.INT.fieldOf("stem_height")
+                    Codec.INT.fieldOf("stem_height_min")
                             .orElse(3)
-                            .forGetter(config -> config.stemHeight)
+                            .forGetter(config -> config.stemHeightMin),
+                    Codec.INT.fieldOf("stem_height_max")
+                            .orElse(5)
+                            .forGetter(config -> config.stemHeightMax)
             ).apply(instance, HugeChampignonFeatureConfiguration::new));
 
     public final BlockStateProvider capProvider;
     public final BlockStateProvider stemProvider;
-    public final int stemHeight;
+    public final int stemHeightMin;
+    public final int stemHeightMax;
 
     public HugeChampignonFeatureConfiguration(
             BlockStateProvider capProvider,
             BlockStateProvider stemProvider,
-            int stemHeight) {
+            int stemHeightMin, int stemHeightMax) {
 
         this.capProvider = capProvider;
         this.stemProvider = stemProvider;
-        this.stemHeight = stemHeight;
+        this.stemHeightMin = stemHeightMin;
+        this.stemHeightMax = stemHeightMax;
     }
 }

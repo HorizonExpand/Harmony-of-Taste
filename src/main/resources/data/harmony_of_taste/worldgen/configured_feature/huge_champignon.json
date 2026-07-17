@@ -4,9 +4,9 @@
     "cap_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:red_mushroom_block",
+        "Name": "harmony_of_taste:champignon_block",
         "Properties": {
-          "down": "false",
+          "down": "true",
           "east": "true",
           "north": "true",
           "south": "true",
@@ -15,11 +15,12 @@
         }
       }
     },
-    "stem_height": 4,
+    "stem_height_min": 3,
+    "stem_height_max": 5,
     "stem_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:mushroom_stem",
+        "Name": "harmony_of_taste:champignon_stem",
         "Properties": {
           "down": "false",
           "east": "true",

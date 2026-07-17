@@ -31,7 +31,7 @@ public class HarmonyOfTasteFeatures {
                     new HugeChampignonFeatureConfiguration(
                             BlockStateProvider.simple(HarmonyOfTasteBlocks.CHAMPIGNON_BLOCK.get()),
                             BlockStateProvider.simple(HarmonyOfTasteBlocks.CHAMPIGNON_STEM.get()),
-                            Mth.randomBetweenInclusive(RandomSource.create(), 3, 5)
+                            3, 5
                     )
             ));
 

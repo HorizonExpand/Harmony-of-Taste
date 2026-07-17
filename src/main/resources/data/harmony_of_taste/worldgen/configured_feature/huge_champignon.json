@@ -1,0 +1,34 @@
+{
+  "type": "harmony_of_taste:huge_champignon",
+  "config": {
+    "cap_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:red_mushroom_block",
+        "Properties": {
+          "down": "false",
+          "east": "true",
+          "north": "true",
+          "south": "true",
+          "up": "true",
+          "west": "true"
+        }
+      }
+    },
+    "stem_height": 4,
+    "stem_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:mushroom_stem",
+        "Properties": {
+          "down": "false",
+          "east": "true",
+          "north": "true",
+          "south": "true",
+          "up": "false",
+          "west": "true"
+        }
+      }
+    }
+  }
+}

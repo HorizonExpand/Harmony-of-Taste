@@ -16,7 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class HarmonyOfTasteBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(HarmonyOfTaste.MODID);
 
-    public static final DeferredBlock<Block> CHAMPIGNON = BLOCKS.register("champignon", () -> new MushroomBlock(HarmonyOfTasteFeatures.HUGE_CHAMPIGNON_KEY,
+    public static final DeferredBlock<Block> CHAMPIGNON = BLOCKS.register("champignon", () -> new MushroomBlock(HarmonyOfTasteConfiguredFeatures.HUGE_CHAMPIGNON,
             BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).lightLevel((p_50892_) -> 1).hasPostProcess((state, level, pos) -> true).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> POTTED_CHAMPIGNON = BLOCKS.register("potted_champignon", () -> new FlowerPotBlock(CHAMPIGNON.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHAMPIGNON_BLOCK = BLOCKS.register("champignon_block", () -> new HugeMushroomBlock(BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASS).strength(0.2F).sound(SoundType.WOOD).ignitedByLava()));

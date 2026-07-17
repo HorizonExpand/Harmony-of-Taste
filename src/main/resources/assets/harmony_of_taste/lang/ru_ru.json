@@ -1,8 +1,11 @@
 {
   "block.harmony_of_taste.champignon": "Шампиньон",
-  "block.harmony_of_state": "Шампиньон в горшке",
-  "block.harmony_of_taste.champignon_block": "Блок шампиньона",
+  "block.harmony_of_state.potted_champignon": "Шампиньон в горшке",
   "block.harmony_of_taste.champignon_stem": "Ножка шампиньона",
+  "block.harmony_of_taste.champignon_block": "Блок шампиньона",
+
+  "item.harmony_of_taste.raw_goat_meat": "Сырое козье мясо",
+  "item.harmony_of_taste.cooked_goat_meat": "Жареное козье мясо",
 
   "itemGroup.harmony_of_taste": "Harmony of Taste"
 }

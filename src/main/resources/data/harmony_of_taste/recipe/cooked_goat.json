@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "harmony_of_taste:raw_goat_meat"
+  },
+  "result": {
+    "id": "harmony_of_taste:cooked_goat_meat"
+  }
+}

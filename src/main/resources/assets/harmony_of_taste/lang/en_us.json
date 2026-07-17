@@ -1,10 +1,11 @@
 {
   "block.harmony_of_taste.champignon": "Champignon",
-  "block.harmony_of_state": "Potted Champignon",
-  "block.harmony_of_taste.champignon_block": "Champignon Block",
+  "block.harmony_of_state.potted_champignon": "Potted Champignon",
   "block.harmony_of_taste.champignon_stem": "Champignon Stem",
+  "block.harmony_of_taste.champignon_block": "Champignon Block",
 
-  "item.harmony_of_taste.champignon": "Champignon",
+  "item.harmony_of_taste.raw_goat_meat": "Raw Goat Meat",
+  "item.harmony_of_taste.cooked_goat_meat": "Cooked Goat Meat",
 
   "itemGroup.harmony_of_taste": "Harmony of Taste"
 }

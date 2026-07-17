@@ -5,11 +5,9 @@ import net.hrumer.harmony_of_taste.HarmonyOfTaste;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -22,8 +20,10 @@ public class HarmonyOfTasteCreativeTabs {
             .title(Component.translatable("itemGroup.harmony_of_taste"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_ITEM);
-                output.accept(HarmonyOfTasteItems.CHAMPIGNON_BLOCK_ITEM);
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_STEM_ITEM);
+                output.accept(HarmonyOfTasteItems.CHAMPIGNON_BLOCK_ITEM);
+                output.accept(HarmonyOfTasteItems.RAW_GOAT_MEAT);
+                output.accept(HarmonyOfTasteItems.COOKED_GOAT_MEAT);
             })
             .build());
 

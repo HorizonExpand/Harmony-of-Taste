@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "minecraft:raw_goat_meat"
+  },
+  "result": {
+    "id": "minecraft:cooked_goat_meat"
+  }
+}

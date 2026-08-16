@@ -24,6 +24,7 @@ public class HarmonyOfTasteCreativeTabs {
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_BLOCK_ITEM);
                 output.accept(HarmonyOfTasteItems.RAW_GOAT_MEAT);
                 output.accept(HarmonyOfTasteItems.COOKED_GOAT_MEAT);
+                output.accept(HarmonyOfTasteItems.GOAT_MILK_BUCKET);
             })
             .build());
 

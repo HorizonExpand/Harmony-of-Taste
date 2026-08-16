@@ -6,6 +6,9 @@
 
   "item.harmony_of_taste.raw_goat_meat": "Сырое козье мясо",
   "item.harmony_of_taste.cooked_goat_meat": "Жареное козье мясо",
+  "item.harmony_of_taste.goat_milk_bucket": "Ведро козьего молока",
+
+  "fluid.harmony_of_taste.goat_milk": "Козье молоко",
 
   "itemGroup.harmony_of_taste": "Harmony of Taste"
 }

@@ -1,9 +1,6 @@
 package net.hrumer.harmony_of_taste;
 
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteBlocks;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteCreativeTabs;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteFeatures;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteItems;
+import net.hrumer.harmony_of_taste.init.*;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -17,6 +14,7 @@ public class HarmonyOfTaste {
         HarmonyOfTasteItems.registry(modEventBus);
         HarmonyOfTasteCreativeTabs.registry(modEventBus);
         HarmonyOfTasteFeatures.register(modEventBus);
+        HarmonyOfTasteFluids.register(modEventBus);
     }
 
 }

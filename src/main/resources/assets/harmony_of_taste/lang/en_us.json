@@ -6,6 +6,9 @@
 
   "item.harmony_of_taste.raw_goat_meat": "Raw Goat Meat",
   "item.harmony_of_taste.cooked_goat_meat": "Cooked Goat Meat",
+  "item.harmony_of_taste.goat_milk_bucket": "Goat Milk Bucket",
+
+  "fluid.harmony_of_taste.goat_milk": "Goat Milk",
 
   "itemGroup.harmony_of_taste": "Harmony of Taste"
 }

@@ -3,10 +3,14 @@
   "block.harmony_of_state.potted_champignon": "Potted Champignon",
   "block.harmony_of_taste.champignon_stem": "Champignon Stem",
   "block.harmony_of_taste.champignon_block": "Champignon Block",
+  "block.harmony_of_taste.hay_slab": "Hay Slab",
+  "block.harmony_of_taste.hay_stairs": "Hay Stairs",
 
   "item.harmony_of_taste.raw_goat_meat": "Raw Goat Meat",
   "item.harmony_of_taste.cooked_goat_meat": "Cooked Goat Meat",
   "item.harmony_of_taste.goat_milk_bucket": "Goat Milk Bucket",
+  "item.harmony_of_taste.goat_milk_bottle": "Goat Milk Bottle",
+  "item.harmony_of_taste.cow_milk_bottle": "Cow Milk Bottle",
 
   "fluid.harmony_of_taste.goat_milk": "Goat Milk",
 

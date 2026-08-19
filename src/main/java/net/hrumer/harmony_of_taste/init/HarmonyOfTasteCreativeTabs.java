@@ -5,8 +5,8 @@ import net.hrumer.harmony_of_taste.HarmonyOfTaste;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-
 import net.minecraft.world.item.ItemStack;
+
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -25,6 +25,10 @@ public class HarmonyOfTasteCreativeTabs {
                 output.accept(HarmonyOfTasteItems.RAW_GOAT_MEAT);
                 output.accept(HarmonyOfTasteItems.COOKED_GOAT_MEAT);
                 output.accept(HarmonyOfTasteItems.GOAT_MILK_BUCKET);
+                output.accept(HarmonyOfTasteItems.GOAT_MILK_BOTTLE);
+                output.accept(HarmonyOfTasteItems.COW_MILK_BOTTLE);
+                output.accept(HarmonyOfTasteItems.HAY_SLAB_ITEM);
+                output.accept(HarmonyOfTasteItems.HAY_STAIRS_ITEM);
             })
             .build());
 

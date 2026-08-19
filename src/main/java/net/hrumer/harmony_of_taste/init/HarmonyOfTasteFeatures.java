@@ -3,12 +3,12 @@ package net.hrumer.harmony_of_taste.init;
 import net.hrumer.harmony_of_taste.HarmonyOfTaste;
 import net.hrumer.harmony_of_taste.content.features.HugeChampignonFeature;
 import net.hrumer.harmony_of_taste.content.features.configurations.HugeChampignonFeatureConfiguration;
+
 import net.minecraft.core.registries.Registries;
-import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;

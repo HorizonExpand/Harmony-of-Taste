@@ -3,10 +3,14 @@
   "block.harmony_of_state.potted_champignon": "Шампиньон в горшке",
   "block.harmony_of_taste.champignon_stem": "Ножка шампиньона",
   "block.harmony_of_taste.champignon_block": "Блок шампиньона",
+  "block.harmony_of_taste.hay_slab": "Плита из сена",
+  "block.harmony_of_taste.hay_stairs": "Ступеньки из сена",
 
   "item.harmony_of_taste.raw_goat_meat": "Сырое козье мясо",
   "item.harmony_of_taste.cooked_goat_meat": "Жареное козье мясо",
   "item.harmony_of_taste.goat_milk_bucket": "Ведро козьего молока",
+  "item.harmony_of_taste.goat_milk_bottle": "Бутылочка козьего молока",
+  "item.harmony_of_taste.cow_milk_bottle": "Бутылочка молока",
 
   "fluid.harmony_of_taste.goat_milk": "Козье молоко",
 

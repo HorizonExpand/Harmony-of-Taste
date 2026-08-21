@@ -20,7 +20,6 @@ public class HarmonyOfTasteCreativeTabs {
             .title(Component.translatable("itemGroup.harmony_of_taste"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_ITEM);
-                output.accept(HarmonyOfTasteItems.CHAMPIGNON_STEM_ITEM);
                 output.accept(HarmonyOfTasteItems.CHAMPIGNON_BLOCK_ITEM);
                 output.accept(HarmonyOfTasteItems.RAW_GOAT_MEAT);
                 output.accept(HarmonyOfTasteItems.COOKED_GOAT_MEAT);

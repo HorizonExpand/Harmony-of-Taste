@@ -3,9 +3,6 @@
     "harmony_of_taste:champignon": {
       "chance": 0.65
     },
-    "harmony_of_taste:champignon_stem": {
-      "chance": 0.65
-    },
     "harmony_of_taste:champignon_block": {
       "chance": 0.85
     }

@@ -1,11 +1,11 @@
-package net.hrumer.harmony_of_taste.client;
+package net.hrumer.harmony_of_taste.init;
 
 import net.hrumer.harmony_of_taste.HarmonyOfTaste;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteDataComponents;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteFluids;
-import net.hrumer.harmony_of_taste.init.HarmonyOfTasteItems;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Items;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -14,6 +14,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 import net.neoforged.neoforge.fluids.capability.templates.FluidHandlerItemStackSimple;
 import net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper;
 
@@ -47,29 +48,38 @@ public class HarmonyOfTasteEvents {
         }, HarmonyOfTasteFluids.GOAT_MILK_TYPE.value());
     }
 
-    @EventBusSubscriber(modid = HarmonyOfTaste.MODID, bus = EventBusSubscriber.Bus.MOD)
-    public static class HarmonyCapabilities {
+    @SubscribeEvent
+    public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidBucketWrapper(stack),
+                HarmonyOfTasteItems.GOAT_MILK_BUCKET.get());
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidHandlerItemStackSimple(
+                        () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
+                        stack,
+                        250),
+                HarmonyOfTasteItems.GOAT_MILK_BOTTLE.get());
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidHandlerItemStackSimple(
+                        () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
+                        stack,
+                        250),
+                HarmonyOfTasteItems.COW_MILK_BOTTLE.get());
+    }
 
-        @SubscribeEvent
-        public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-            event.registerItem(
-                    Capabilities.FluidHandler.ITEM,
-                    (stack, context) -> new FluidBucketWrapper(stack),
-                    HarmonyOfTasteItems.GOAT_MILK_BUCKET.get());
-            event.registerItem(
-                    Capabilities.FluidHandler.ITEM,
-                    (stack, context) -> new FluidHandlerItemStackSimple(
-                            () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
-                            stack,
-                            250),
-                    HarmonyOfTasteItems.GOAT_MILK_BOTTLE.get());
-            event.registerItem(
-                    Capabilities.FluidHandler.ITEM,
-                    (stack, context) -> new FluidHandlerItemStackSimple(
-                            () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
-                            stack,
-                            250),
-                    HarmonyOfTasteItems.COW_MILK_BOTTLE.get());
-        }
+    @SubscribeEvent
+    public static void modifyComponents(ModifyDefaultComponentsEvent event) {
+        event.modify(Items.MILK_BUCKET, builder -> {
+            builder.set(
+                    DataComponents.FOOD,
+                    new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6f)
+                            .alwaysEdible()
+                            .build());
+        });
     }
 }

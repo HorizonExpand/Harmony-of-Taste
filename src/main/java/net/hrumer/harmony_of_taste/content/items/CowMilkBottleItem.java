@@ -24,8 +24,8 @@ public class CowMilkBottleItem extends HoneyBottleItem {
     
     @Override
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity livingEntity) {
-        FoodProperties foodproperties = itemStack.getFoodProperties(livingEntity);
-        livingEntity.eat(level, itemStack, foodproperties);
+        FoodProperties foodProperties = itemStack.getFoodProperties(livingEntity);
+        livingEntity.eat(level, itemStack, foodProperties);
         if (livingEntity instanceof ServerPlayer serverplayer) {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, itemStack);
             serverplayer.awardStat(Stats.ITEM_USED.get(this));

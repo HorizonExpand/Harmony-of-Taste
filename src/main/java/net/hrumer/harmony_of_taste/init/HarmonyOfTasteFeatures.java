@@ -5,6 +5,7 @@ import net.hrumer.harmony_of_taste.content.features.HugeChampignonFeature;
 import net.hrumer.harmony_of_taste.content.features.configurations.HugeChampignonFeatureConfiguration;
 
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
@@ -30,7 +31,7 @@ public class HarmonyOfTasteFeatures {
                     HUGE_CHAMPIGNON_FEATURE.get(),
                     new HugeChampignonFeatureConfiguration(
                             BlockStateProvider.simple(HarmonyOfTasteBlocks.CHAMPIGNON_BLOCK.get()),
-                            BlockStateProvider.simple(HarmonyOfTasteBlocks.CHAMPIGNON_STEM.get()),
+                            BlockStateProvider.simple(Blocks.MUSHROOM_STEM),
                             3, 5
                     )
             ));

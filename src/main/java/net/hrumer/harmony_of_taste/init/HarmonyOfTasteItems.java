@@ -6,7 +6,6 @@ import net.hrumer.harmony_of_taste.content.items.GoatMilkBottleItem;
 import net.hrumer.harmony_of_taste.content.items.GoatMilkBucketItem;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -22,7 +21,6 @@ public class HarmonyOfTasteItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HarmonyOfTaste.MODID);
 
     public static final DeferredItem<BlockItem> CHAMPIGNON_ITEM = ITEMS.registerSimpleBlockItem("champignon", HarmonyOfTasteBlocks.CHAMPIGNON);
-    public static final DeferredItem<BlockItem> CHAMPIGNON_STEM_ITEM = ITEMS.registerSimpleBlockItem("champignon_stem", HarmonyOfTasteBlocks.CHAMPIGNON_STEM);
     public static final DeferredItem<BlockItem> CHAMPIGNON_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("champignon_block", HarmonyOfTasteBlocks.CHAMPIGNON_BLOCK);
     public static final DeferredItem<Item> RAW_GOAT_MEAT = ITEMS.registerSimpleItem("raw_goat_meat",
             new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.2f).build()));
@@ -30,14 +28,17 @@ public class HarmonyOfTasteItems {
             new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationModifier(0.7f).build()));
     public static final DeferredItem<Item> GOAT_MILK_BUCKET = ITEMS.register("goat_milk_bucket", () ->
                     new GoatMilkBucketItem(HarmonyOfTasteFluids.GOAT_MILK.get(),
-                            new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+                            new Item.Properties().craftRemainder(Items.BUCKET)
+                                    .food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f).alwaysEdible().build()).stacksTo(1)));
     public static final DeferredItem<Item> GOAT_MILK_BOTTLE = ITEMS.register("goat_milk_bottle", () ->
-            new GoatMilkBottleItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).food(Foods.HONEY_BOTTLE).stacksTo(16).component(
+            new GoatMilkBottleItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)
+                    .food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.6f).alwaysEdible().build()).stacksTo(16).component(
                     HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
                     SimpleFluidContent.copyOf(
                             new FluidStack(HarmonyOfTasteFluids.GOAT_MILK.get(), 250)))));
     public static final DeferredItem<Item> COW_MILK_BOTTLE = ITEMS.register("cow_milk_bottle", () ->
-            new CowMilkBottleItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).food(Foods.HONEY_BOTTLE).stacksTo(16).component(
+            new CowMilkBottleItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)
+                    .food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.6f).alwaysEdible().build()).stacksTo(16).component(
                     HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
                     SimpleFluidContent.copyOf(
                             new FluidStack(NeoForgeMod.MILK.get(), 250)))));

@@ -76,7 +76,7 @@ public class HarmonyOfTasteEvents {
             builder.set(
                     DataComponents.FOOD,
                     new FoodProperties.Builder()
-                            .nutrition(6)
+                            .nutrition(3)
                             .saturationModifier(0.6f)
                             .alwaysEdible()
                             .build());

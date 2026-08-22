@@ -4,6 +4,7 @@
   "package": "net.hrumer.harmony_of_taste.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "IBlockExtensionMixin",
     "MilkBucketItemMixin"
   ],
   "client": [

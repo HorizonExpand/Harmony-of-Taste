@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#c:foods/cheese",
+    "#c:foods/cooked_meat",
+    "#c:foods/dough",
+    "#c:foods/edible_when_place",
+    "#c:foods/goat_milk",
+    "#c:foods/milk",
+    "#c:foods/raw_meat",
+    "#c:foods/vegetable"
+  ]
+}

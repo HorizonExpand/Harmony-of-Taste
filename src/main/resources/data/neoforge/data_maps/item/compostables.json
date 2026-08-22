@@ -5,6 +5,12 @@
     },
     "harmony_of_taste:champignon_block": {
       "chance": 0.85
+    },
+    "harmony_of_taste:hay_slab": {
+      "chance": 0.85
+    },
+    "harmony_of_taste:hay_stairs": {
+      "chance": 0.85
     }
   }
 }

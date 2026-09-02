@@ -56,18 +56,20 @@ public class HarmonyOfTasteEvents {
                 HarmonyOfTasteItems.GOAT_MILK_BUCKET.get());
         event.registerItem(
                 Capabilities.FluidHandler.ITEM,
-                (stack, context) -> new FluidHandlerItemStackSimple(
+                (stack, context) -> new FluidHandlerItemStackSimple.SwapEmpty(
                         () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
                         stack,
+                        Items.GLASS_BOTTLE.getDefaultInstance(),
                         250),
                 HarmonyOfTasteItems.GOAT_MILK_BOTTLE.get());
         event.registerItem(
                 Capabilities.FluidHandler.ITEM,
-                (stack, context) -> new FluidHandlerItemStackSimple(
+                (stack, context) -> new FluidHandlerItemStackSimple.SwapEmpty(
                         () -> HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),
                         stack,
+                        Items.GLASS_BOTTLE.getDefaultInstance(),
                         250),
-                HarmonyOfTasteItems.COW_MILK_BOTTLE.get());
+                HarmonyOfTasteItems.MILK_BOTTLE.get());
     }
 
     @SubscribeEvent

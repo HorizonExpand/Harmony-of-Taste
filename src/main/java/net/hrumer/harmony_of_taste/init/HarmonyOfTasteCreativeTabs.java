@@ -25,7 +25,7 @@ public class HarmonyOfTasteCreativeTabs {
                 output.accept(HarmonyOfTasteItems.COOKED_GOAT_MEAT);
                 output.accept(HarmonyOfTasteItems.GOAT_MILK_BUCKET);
                 output.accept(HarmonyOfTasteItems.GOAT_MILK_BOTTLE);
-                output.accept(HarmonyOfTasteItems.COW_MILK_BOTTLE);
+                output.accept(HarmonyOfTasteItems.MILK_BOTTLE);
                 output.accept(HarmonyOfTasteItems.HAY_SLAB_ITEM);
                 output.accept(HarmonyOfTasteItems.HAY_STAIRS_ITEM);
             })

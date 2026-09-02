@@ -40,7 +40,7 @@ public class HarmonyOfTasteItems {
                     SimpleFluidContent.copyOf(
                             new FluidStack(HarmonyOfTasteFluids.GOAT_MILK.get(), 250)))));
 
-    public static final DeferredItem<Item> COW_MILK_BOTTLE = ITEMS.register("cow_milk_bottle", () ->
+    public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle", () ->
             new CowMilkBottleItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)
                     .food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.6f).alwaysEdible().build()).stacksTo(16).component(
                     HarmonyOfTasteDataComponents.FLUID_CONTENT.get(),

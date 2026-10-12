@@ -103,7 +103,7 @@ dependencies {
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
 
     // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
+    implementation files("libs/vortylib-1.2.5.1.jar")
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")

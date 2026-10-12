@@ -8,6 +8,7 @@ import net.hrumer.harmony_of_taste.content.items.GoatMilkBucketItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 import net.neoforged.bus.api.IEventBus;
@@ -16,6 +17,8 @@ import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class HarmonyOfTasteItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HarmonyOfTaste.MODID);
